@@ -1,0 +1,25 @@
+/* here we use .h1 as it is class to change the color of only one heading 
+we can give any unique class name .we use .for classes */
+.h1{
+    color: black;
+}
+/* here again we use #h1 as it is id which helps to change the color to 
+particular heading only . we use # for ids*/
+#h2{
+    color: rgb(212, 19, 19);
+}
+.h3{
+    color: rgb(153, 15, 93);
+}
+ol{
+    color: rgb(12, 110, 110);
+}
+ul{
+    color: rebeccapurple;
+}
+dl{
+    color: rgb(204, 128, 29);
+}
+body{
+    background-color: antiquewhite;
+}

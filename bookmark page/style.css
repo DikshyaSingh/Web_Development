@@ -3,6 +3,9 @@ body{
     text-decoration: underline;
 }
 h1{
+    background-color: bisque ;
+    width: 250px;
     font-style: italic;
+
 }
 
