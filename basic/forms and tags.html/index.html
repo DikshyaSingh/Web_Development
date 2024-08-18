@@ -8,30 +8,44 @@
 </head>
 
 <body>
-    <form action="post">
+    <form action="/submit.php" method="post">
         <div>
             <label for="username">Enter your name </label>
-            <input type="text" id="username" name="usernmae" placeholder="Enter your name">
+            <input type="text" id="username" name="usernmae" placeholder="Enter your name" required pattern="[a-zZ-A]">
         </div>
         <div>
-            <input type="radio" name="gender" id="male" value="male">
+            <input type="radio" name="gender" id="male" value="male" required>
             <label for="male">male</label>
-            <input type="radio" name="gender" id="female" value="male">
+            <input type="radio" name="gender" id="female" value="male" required>
             <label for="female">female</label>
         </div>
         <div>
-            <input type="checkbox" name="html" id="sub" value="sub">
+            <input type="checkbox" name="html" id="sub" value="sub"required>
             <label for="sub">html</label>
         </div>
 
         <div>
-            <input type="checkbox" name="html" id="sub" value="sub">
+            <input type="checkbox" name="html" id="sub" value="sub"required>
             <label for="sub">CSS</label>
         </div>
         <div>
-            <textarea name="anythig" id="comment" rows="2" cols="50">
-                Enter the comment...
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="anythig" id="comment" rows="4" cols="50"required>
             </textarea>
+        </div>
+        <div>
+            <label for="class">Select your subject</label>
+            <select name="subjects" id="class"required>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                <option value="JAVA">JAVA</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="submit" id="submit">
+            <label for="submit"></label>
         </div>
     </form>
 </body>
