@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
 </head>
 
 <style>
-    
-    .nav{
+    .nav {
         display: flex;
         justify-content: space-around;
         background-color: aliceblue;
@@ -17,20 +17,55 @@
         border-radius: 20px;
 
     }
-    .logo span{
+
+    .logo span {
         font-weight: bold;
         font-size: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
     }
-    ul{
+    .logo span:hover{
+        transform: scale(1.2);
+    }
+
+    ul {
         display: flex;
         gap: 30px;
-        
+
     }
-    ul li{
-       list-style: none;
-       cursor: pointer;
+
+    ul li {
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+        transition: letter-spacing 0.3s ease-in-out;
+        /* Required for the line to be positioned correctly */
+    }
+
+    ul li::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 2px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+    bottom: -5px; /* Distance of the line from the text */
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center align */
+    transition: width 0.3s ease-in-out;
+}
+
+    ul li:hover::after {
+        width: 100%;
+        background-color: blue;
+        
+        /* Expands the line to full width on hover */
+    }
+    ul li:hover{
+        color: blue;
+        letter-spacing: 2px;
     }
 </style>
+
 <body>
     <nav class="nav">
         <div class="logo">
@@ -44,4 +79,5 @@
         </ul>
     </nav>
 </body>
+
 </html>
