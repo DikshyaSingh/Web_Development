@@ -14,7 +14,7 @@
         background-color: aliceblue;
         margin: 20px;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 25px;
 
     }
 
@@ -39,18 +39,18 @@
         cursor: pointer;
         position: relative;
         transition: letter-spacing 0.3s ease-in-out;
-        /* Required for the line to be positioned correctly */
+      
     }
 
     ul li::after {
     content: '';
     position: absolute;
     width: 10%;
-    height: 2px; /* Thickness of the line */
-    background-color: black; /* Color of the line */
-    bottom: -5px; /* Distance of the line from the text */
-    left: 50%; /* Start from the center */
-    transform: translateX(-50%); /* Center align */
+    height: 2px;
+    background-color: black; 
+    bottom: -5px; 
+    left: 50%;
+    transform: translateX(-50%); 
     transition: width 0.3s ease-in-out;
 }
 
@@ -58,7 +58,7 @@
         width: 100%;
         background-color: blue;
         
-        /* Expands the line to full width on hover */
+      
     }
     ul li:hover{
         color: blue;
