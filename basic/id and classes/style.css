@@ -1,0 +1,25 @@
+.pink{
+    color: rgb(234, 65, 166) !important;
+    /* !important pritorizes first else id will have more priority */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+}  
+#username{
+    color: rgb(71, 6, 251);
+    font-weight: bolder;
+    font-size: 20px;
+}  
+.blue{
+    color: aqua;
+}
+.button{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.btndes{
+    color: blueviolet;
+    font-style: normal;
+    border: 4px solid green;
+}
