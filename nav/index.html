@@ -18,14 +18,18 @@
 
     }
 
-    .logo span {
+    span {
         font-weight: bold;
         font-size: 20px;
         cursor: pointer;
-        transition: transform 0.3s ease-in-out;
+        color:black;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     }
-    .logo span:hover{
-        transform: scale(1.2);
+
+    span:hover {
+        transform: scale(1.5);
+        color: red;
     }
 
     ul {
@@ -39,28 +43,29 @@
         cursor: pointer;
         position: relative;
         transition: letter-spacing 0.3s ease-in-out;
-      
+
     }
 
     ul li::after {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 2px;
-    background-color: black; 
-    bottom: -5px; 
-    left: 50%;
-    transform: translateX(-50%); 
-    transition: width 0.3s ease-in-out;
-}
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 2px;
+        background-color: black;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s ease-in-out;
+    }
 
     ul li:hover::after {
         width: 100%;
         background-color: blue;
-        
-      
+
+
     }
-    ul li:hover{
+
+    ul li:hover {
         color: blue;
         letter-spacing: 2px;
     }
