@@ -1,0 +1,8 @@
+span{
+    text-decoration: underline;
+    font-style: italic;
+    flood-color: blue;
+}
+ul{
+    display: flex;
+}
